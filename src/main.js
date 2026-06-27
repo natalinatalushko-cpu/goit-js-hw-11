@@ -19,10 +19,6 @@ function onSearch(event) {
   const query = event.target.elements['search-text'].value.trim();
 
   if (query === '') {
-    iziToast.warning({
-      message: 'Please enter a search word!',
-      position: 'topRight',
-    });
     return;
   }
 
